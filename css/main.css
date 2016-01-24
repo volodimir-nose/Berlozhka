@@ -1,0 +1,412 @@
+/*-----------------reset--------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background-color: #5a5a5a;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*----------------------------------------------------header---------------------------------------------------------*/
+header {
+    background-color: #555;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    border-bottom: solid #1e559c 5px;
+    z-index: 30;
+}
+
+nav {
+    padding: 20px 100px;
+    margin: auto;
+}
+
+nav li {
+    display: inline-block;
+    font-family:  Noto Sans, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+nav li:nth-child(n+5) {
+    float: right;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #1e559c;
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------main.html---------------------------------------------------*/
+/*-----------------------------------------------------main photo block-----------------*/
+.main-photo {
+    background: url("../img/main.jpg") no-repeat;
+    background-size: 100%;
+    background-position: 50% 30%; /*-----------х*/
+    overflow: hidden;
+    width: auto;
+    height: 750px;
+    position: relative;
+
+}
+
+.main-photo__text {
+    margin: 190px 10px 10px 60px;
+    z-index: 16;
+    width: 1000px;
+    height: auto;
+    position: relative;
+    color: #fff;
+}
+
+.main-photo__text h3 {
+    left: 105px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+}
+
+.main-photo__text h1 {
+    font-family: "Noto Sans", "PT Sans Caption", "PT Sans Narrow", "PT Sans", sans-serif;
+    font-size: 90px;
+    color: #1e559c;
+    position: absolute;
+}
+
+.main-photo__text p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    text-shadow: 2px 2px 0 #555;
+    position: absolute;
+    top: 120px;
+    max-width: 900px;
+}
+
+.main-photo__text a {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    color: #1e559c;
+    left: 10px;
+    position: absolute;
+    top: 235px;
+}
+
+.main-photo__footer {
+    height: 200px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+
+}
+
+.main-photo__footer__background {
+    background-color: #fff;
+    opacity: .5;
+    z-index: 28;
+    height: 100%;
+}
+
+.main-photo__footer__text {
+    width: 980px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    color: #000;
+    top: -190px;
+    position: relative;
+    margin: auto;
+    padding: 0 5px 15px;
+    text-align: justify;
+}
+/*---------------------------------------------phrase---------*/
+.phrase {
+    background-color: #ddd;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phrase h1 {
+    color: #222;
+    font-family: "Noto Sans", "PT Sans Caption", sans-serif;
+    font-size: 30px;
+    margin: auto;
+}
+
+/*-----------------------------------sections-------------------*/
+.sections {
+    width: 980px;
+    height: auto;
+    background-color: #ddd;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: inline-block;
+    margin: 0 2px;
+    width: 320px;
+    height: auto;
+}
+
+.column a {
+    text-decoration: none;
+}
+
+.link-img-small {
+    border: #1e559c 4px solid;
+    width: 312px;
+    height: 208px;
+    margin: 4px 0;
+}
+
+.link-img-small img {
+    left: -30%;
+    height: 100%;
+}
+
+.link-img-small h1 {
+    text-align: center;
+    color: #ddd;
+    position: relative;
+    top: -124px;
+    font-size: 32px;
+    font-family: "Noto Sans", "PT Sans Caption", sans-serif;
+    text-shadow: 2px 2px 0 #1e559c;
+}
+
+.link-img-big {
+    border: #1e559c 4px solid;
+    width: 312px;
+    height: 428px;
+    margin: 4px 0;
+}
+
+.link-img-big img {
+    height: 100%;
+}
+
+.link-img-big h1 {
+    top: -232px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    font-size: 32px;
+    font-family: "Noto Sans", "PT Sans Caption", sans-serif;
+    text-shadow: 2px 2px 0 #1e559c;
+}
+
+/*-------------------------------------------------text--------------------*/
+.text {
+    width: 980px;
+    height: auto;
+    background-color: #ddd;
+    position: relative;
+    top: 35px;
+    margin: 0 auto 20px;
+    padding-bottom: 30px;
+}
+
+.text h1 {
+    font-family: "PT Sans", sans-serif;
+    margin: 5px 120px 0;
+    left: 10px;
+    font-size: 26px;
+    padding-top: 20px;
+    color: #1e559c;
+}
+
+.text p {
+    margin: 5px 120px;
+    font-family: "Noto Sans", "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.text a {
+    margin: 5px 120px;
+    font-family: "Noto Sans", "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    color: #1e559c;
+    text-align: left;
+}
+
+.text h2 {
+    margin: 0 120px;
+    font-family: "Noto Sans", "PT Sans Caption", sans-serif;
+    font-size: 18px;
+    left: 10px;
+    color: #000;
+    padding-bottom: 7px;
+}
+
+.text img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.category-top {
+    width: 100%;
+    background-color: #1e559c;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.category-top h1 {
+    font-family: "PT Sans", sans-serif;
+    margin: 0 120px 0;
+    left: 10px;
+    font-size: 26px;
+    color: #ddd;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/*.on-page {*/
+    /*top: 200px;*/
+    /*position: relative;*/
+/*}*/
+/*-----------------------------------------------------location------------------------------------------------------*/
+
+.container {
+    width: 980px;
+    height: 100%;
+    margin: auto;
+    background-color: #ddd;
+    padding-top: 50px;
+}
+
+.container h1 {
+    font-family: "PT Sans", sans-serif;
+    margin-left: 40px;
+    font-size: 26px;
+    padding-top: 40px;
+    color: #1e559c;
+}
+
+.container a {
+    text-decoration: none;
+    color: #1e559c;
+}
+
+.container p {
+    margin: 20px 40px 30px;
+    font-family: "Noto Sans", "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.container h2 {
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 40px;
+    color: #1e559c;
+}
+
+#topspb_id {
+    margin: 30px 290px 30px;
+}
+
+/*---------------------------------------------------------contacts----------------------------------*/
+.container img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.container table {
+    margin: 10px auto 30px;
+    padding: 5px;
+    font-family: "Noto Sans", "PT Sans Caption", sans-serif;
+    font-size: 16px;
+}
+
+.container td {
+    height: 20px;
+    padding: 5px 10px;
+}
+
+.container td:first-child {
+    text-align: right;
+}
+
+/*------------------------------------------------------guests&dogs------------------*/
+.empty {
+    height: 30px;
+}
+ /*---------------------------------------------------events-------------------------------*/
+.events {
+    background-image: url("../img/room1_full.jpg");
+}
+/*--------------------------------------------------footer-----------------------------------------------------------*/
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+footer a {
+    color: #ddd;
+    font-size: 18px;
+    font-family: "PT Sans Caption", "PT Sans", sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
